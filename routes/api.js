@@ -41,7 +41,7 @@ router.get('/quotes/:quote', (req,res) => {
     );
 });
 
-router.get('/user/add/:username/:firstname/:lastname', (req, res) => {    
+router.post('/user/add/:username/:firstname/:lastname', (req, res) => {    
     let user = { 
         username: req.params.username,
         firstname: req.params.firstname,
